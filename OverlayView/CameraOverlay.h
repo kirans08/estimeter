@@ -1,5 +1,5 @@
 //
-//  oV.h
+//  CameraOverlay.h
 //  OverlayView
 //
 //  Created by user on 21/04/15.
@@ -9,26 +9,29 @@
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
 #import "ViewController.h"
-@interface CameraOverlay : UIView
+@interface CameraOverlay : UIView <UIActionSheetDelegate>
 {
     CMMotionManager *motionManager;
+
     UISlider *heightSlider ;
+
+    UIButton *measureDimensionButton;
+    UIButton *measureDistanceButton;
+    UIButton *measureHeightButton;
+    UIButton *heightInfoButton;
+    UIButton *distanceInfoButton;
+    UIButton *dimensionInfoButton;
+
+    UIButton *infoButton;
+    UIButton *homeButton;
+    UIButton *unitPickerButton;
+
     UIButton *calibrateButton;
     UIButton *recalibrateButton;
     UIButton *captureButton;
     UIButton *markBaseButton;
-    UIButton *measureDimensionButton;
-    UIButton *measureDistanceButton;
-    UIButton *measureHeightButton;
     UIButton *markPositon1Button;
-    
-    
-    UIButton *infoButton;
-     UIButton *heightInfoButton;
-     UIButton *distanceInfoButton;
-     UIButton *dimensionInfoButton;
-    UIButton *homeButton;
-    UIButton *unitPickerButton;
+
     UILabel *sliderValueLabel ;
     UILabel *heightOutputLabel ;
     UILabel *distanceOutputlabel1;
@@ -41,16 +44,15 @@
     UIImageView *backgroundImageView;
     UIImageView *guideImageView;
     UIImageView *guideImageView1;
+    UIImageView *indicatorView;
+
     NSTimer *timer;
     NSTimer *timer1;
     NSTimer *timer2;
-    
-    ///////////////////FOR TEST ONLY
-     UILabel *t;
-    ////////////////////////////////
 }
 
 @property (nonatomic, strong) ViewController *viewController;
 - (float)sliderThumbPosition:(UISlider *)slider;
--(void)setMenuView:(BOOL)value;
+-(void)setMenuView:(BOOL)value forDistance:(float)distanceValue;
+
 @end

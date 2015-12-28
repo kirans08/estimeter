@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" alpha="0.69999999999999973" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -73,7 +73,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.28800621809999999" green="0.28800621809999999" blue="0.28800621809999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44056919639999997" green="0.44056919639999997" blue="0.44056919639999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="x9n-Mg-FhT" firstAttribute="leading" secondItem="PiR-7C-FxH" secondAttribute="leading" id="5cc-mj-bP9"/>
                                     <constraint firstItem="KwK-bX-AyU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ws5-UH-gFz" secondAttribute="trailing" constant="45" id="I52-fb-M0n"/>
@@ -116,7 +116,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.4405691964285714" green="0.4405691964285714" blue="0.4405691964285714" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bWB-bz-ENj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="205" id="3Qd-CX-AgP"/>
                             <constraint firstItem="PiR-7C-FxH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="86g-9X-jqO"/>

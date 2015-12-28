@@ -15,7 +15,6 @@
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
 {
     CMMotionManager *motionManager;
-    NSOperationQueue *operationQueue;
     NSTimer *timer;
     UILabel *distanceOutput;
 }
@@ -24,13 +23,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *point2Button;
 @property (strong, nonatomic) IBOutlet UIImageView *capturedImageView;
 
--  (IBAction)pointButtonDrag:(id)sender withEvent:(UIEvent *) event ;
--  (IBAction)goBack:(id)sender;
+- (IBAction)pointButtonDrag:(id)sender withEvent:(UIEvent *) event ;
+- (IBAction)goBack:(id)sender;
 - (IBAction)goToHome:(id)sender;
 - (IBAction)viewGuide:(id)sender;
 
 
 - (IBAction)selectUnits:(id)sender;
-- (void)callBack:(float) distance;
+- (void)callBack:(float) distance ;
+- (void)setTypeAsCamera;
+- (void)setTypeAsVideo;
 @end
 
